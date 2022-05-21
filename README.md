@@ -6,6 +6,7 @@ Reading the digitized values of an analog signal connected to ADC input on Spart
 
 - [Design_Details](Design_Details.md)
 - [Component_Schematics](Component_Schematics.md)
+- [Filter_Simulation_Results](Filter_Simulation_Results.md)
 
 --------------------------------------
 ## Source Code and Desiged Blocks
