@@ -1,6 +1,9 @@
 # Analog-Signal-Interfacing-and-Filtering-using-FPGA-in-VHDL
 Reading the digitized values of an analog signal connected to ADC input on Spartan 3E board, doing some digital filtering on the samples and providing the output through DAC on board. Displaying both the input and output on an Oscilloscope. You can also use Pmod ADC with BASYS3 Board.
 
+--------------------------------------
+## Source Code and Desiged Blocks
+Main Program [Filter_main](RTL_Code/Filter_main.vhd)
 
 --------------------------------------
 ## Block Diagram of the Entire Design
