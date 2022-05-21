@@ -13,6 +13,8 @@ Reading the digitized values of an analog signal connected to ADC input on Spart
   - Filter Testbench
   - Main Testbench [filter_main_tb](RTL_Code/filter_main_tb.vhd)
 
+## Block Diagram of the Complete Design
+![Block_Schematic](https://user-images.githubusercontent.com/47363228/169643419-c0cc3717-fb2a-4f8b-ba70-cf85a99f698f.png)
 
 ## Schematic of the Designed Components
 ### Filter:
