@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: IISc
+-- Engineer: Supantha Sen
 -- 
 -- Create Date: 03.05.2019 16:20:03
--- Design Name: 
+-- Design Name: Filter Test Bench
 -- Module Name: filter_main_tb - Behavioral
--- Project Name: 
+-- Project Name: FPGA Mini-Project
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 
