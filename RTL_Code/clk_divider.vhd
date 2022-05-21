@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: IISc
+-- Engineer: Supantha Sen
 -- 
 -- Create Date: 16.02.2019 22:43:55
--- Design Name: 
+-- Design Name: Clock Divider by 16
 -- Module Name: clk_freq_divideby16 - Behavioral
--- Project Name: 
+-- Project Name: FPGA Mini-Project
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 
