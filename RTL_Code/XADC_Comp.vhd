@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: IISc
+-- Engineer: Supantha Sen
 -- 
 -- Create Date: 03.05.2019 23:01:54
--- Design Name: 
+-- Design Name: ADC Interfacing
 -- Module Name: XADC_Comp - Behavioral
--- Project Name: 
+-- Project Name: FPGA Mini-Project
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 

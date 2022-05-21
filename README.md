@@ -1,6 +1,33 @@
 # Analog-Signal-Interfacing-and-Filtering-using-FPGA-in-VHDL
 Reading the digitized values of an analog signal connected to ADC input on Spartan 3E board, doing some digital filtering on the samples and providing the output through DAC on board. Displaying both the input and output on an Oscilloscope. You can also use Pmod ADC with BASYS3 Board.
 
+--------------------------------------
+## Source Code and Desiged Blocks
+- Main Source Code [Filter_main](RTL_Code/Filter_main.vhd)
+- Components Source Codes:
+  - Clock Divider [clk_divider](RTL_Code/clk_divider.vhd)
+  - ADC Controller [XADC_Comp](RTL_Code/XADC_Comp.vhd)
+  - DAC Controller [DA2_Comp](RTL_Code/DA2_Comp.vhd)
+  - FIR Filter [Filter_comp](RTL_Code/Filter_Comp.vhd)
+- Testbench:
+  - Filter Testbench
+  - Main Testbench [filter_main_tb](RTL_Code/filter_main_tb.vhd)
+
+## Block Diagram of the Complete Design
+![Block_Schematic](https://user-images.githubusercontent.com/47363228/169643419-c0cc3717-fb2a-4f8b-ba70-cf85a99f698f.png)
+
+## Schematic of the Designed Components
+### Filter:
+![Filter](https://user-images.githubusercontent.com/47363228/169643328-c5ce4298-bd55-4b5f-ab7c-8a33e639da3e.png)
+
+### Clock-Divider:
+![Clock_Divider_Component](https://user-images.githubusercontent.com/47363228/169643356-761f749a-a21b-4e0e-80aa-08daf10ea195.png)
+
+### ADC-Controller:
+![ADC_Component](https://user-images.githubusercontent.com/47363228/169643374-83016520-c73f-4b45-80c2-1e76a081be6a.png)
+
+### DAC-Controller:
+![DAC](https://user-images.githubusercontent.com/47363228/169643384-9eb97cb8-1ac2-405b-bc37-ec5a7b682ef6.png)
 
 --------------------------------------
 ## Block Diagram of the Entire Design
@@ -29,7 +56,8 @@ For Filter design we have taken help from MATLAB where we have used filter desig
 - Stop band magnitude attenuation: 80db
 
 #### Filter Designer Window of Matlab
-<img width="451" alt="image" src="https://user-images.githubusercontent.com/47363228/169580050-0c410421-1889-4333-a4c3-391cc3acfb20.png">
+![Filter design specification analog model](https://user-images.githubusercontent.com/47363228/169640560-51be31e9-a256-4b4f-902d-9883506f3dec.PNG)
+
 
 Now from the quantization block in the filter designer the word lengths and fractional lengths are considered to find the coefficients. 
 - Input word length: 12
@@ -39,10 +67,12 @@ Now from the quantization block in the filter designer the word lengths and frac
 - Accumulator word length :12
 - Product word length: 24
 
-<img width="451" alt="image" src="https://user-images.githubusercontent.com/47363228/169580276-4ecab8ca-ee5d-4879-a29b-796dd133c423.png">
+![Filter designer specifications  for filter coefficient generation](https://user-images.githubusercontent.com/47363228/169640571-d1db266c-e680-459f-99b3-353201af1682.PNG)
+
 
 #### Generated Coefficients
-![image](https://user-images.githubusercontent.com/47363228/169580357-f19c2382-1b59-44fa-8c0b-3d067c499fb1.png)
+![coefficients generated from the filter design](https://user-images.githubusercontent.com/47363228/169640589-1d3eb9c8-3282-43b8-9bc3-a4ad91cb1dd8.PNG)
+
 
 As these coefficients must be multiplied with the delayed input signal sequence as described in the data path they are converted in the fixed-point format as explained below:
 Say, 
@@ -53,10 +83,11 @@ Say,
 This E is the stored in as signed 12-bit in the constant called coefficient in VHDL program.  
 
 ### Block Diagram of the Filter
-<img width="265" alt="image" src="https://user-images.githubusercontent.com/47363228/169580603-4220a3f4-2d96-4e20-9720-5e898e9b45cb.png">
+![filter block diagram](https://user-images.githubusercontent.com/47363228/169640598-ea9c34b3-9bd0-4cd8-9888-18f3ce234e1e.PNG)
+
 
 ### Data-Path of the Designed Filter in VHDL
-![image](https://user-images.githubusercontent.com/47363228/169580662-41dac785-d8c5-441b-8f34-885acc4fbc6c.png)
+![Filter_2](https://user-images.githubusercontent.com/47363228/169640616-cc78396d-17b4-4a38-8110-0dff50919e83.jpg)
 
 
 ## ADC Controller
