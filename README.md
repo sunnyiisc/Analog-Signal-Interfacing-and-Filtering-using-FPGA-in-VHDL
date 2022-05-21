@@ -29,7 +29,8 @@ For Filter design we have taken help from MATLAB where we have used filter desig
 - Stop band magnitude attenuation: 80db
 
 #### Filter Designer Window of Matlab
-<img width="451" alt="image" src="https://user-images.githubusercontent.com/47363228/169580050-0c410421-1889-4333-a4c3-391cc3acfb20.png">
+![Filter design specification analog model](https://user-images.githubusercontent.com/47363228/169640560-51be31e9-a256-4b4f-902d-9883506f3dec.PNG)
+
 
 Now from the quantization block in the filter designer the word lengths and fractional lengths are considered to find the coefficients. 
 - Input word length: 12
@@ -39,10 +40,12 @@ Now from the quantization block in the filter designer the word lengths and frac
 - Accumulator word length :12
 - Product word length: 24
 
-<img width="451" alt="image" src="https://user-images.githubusercontent.com/47363228/169580276-4ecab8ca-ee5d-4879-a29b-796dd133c423.png">
+![Filter designer specifications  for filter coefficient generation](https://user-images.githubusercontent.com/47363228/169640571-d1db266c-e680-459f-99b3-353201af1682.PNG)
+
 
 #### Generated Coefficients
-![image](https://user-images.githubusercontent.com/47363228/169580357-f19c2382-1b59-44fa-8c0b-3d067c499fb1.png)
+![coefficients generated from the filter design](https://user-images.githubusercontent.com/47363228/169640589-1d3eb9c8-3282-43b8-9bc3-a4ad91cb1dd8.PNG)
+
 
 As these coefficients must be multiplied with the delayed input signal sequence as described in the data path they are converted in the fixed-point format as explained below:
 Say, 
@@ -53,10 +56,11 @@ Say,
 This E is the stored in as signed 12-bit in the constant called coefficient in VHDL program.  
 
 ### Block Diagram of the Filter
-<img width="265" alt="image" src="https://user-images.githubusercontent.com/47363228/169580603-4220a3f4-2d96-4e20-9720-5e898e9b45cb.png">
+![filter block diagram](https://user-images.githubusercontent.com/47363228/169640598-ea9c34b3-9bd0-4cd8-9888-18f3ce234e1e.PNG)
+
 
 ### Data-Path of the Designed Filter in VHDL
-![image](https://user-images.githubusercontent.com/47363228/169580662-41dac785-d8c5-441b-8f34-885acc4fbc6c.png)
+![Filter_2](https://user-images.githubusercontent.com/47363228/169640616-cc78396d-17b4-4a38-8110-0dff50919e83.jpg)
 
 
 ## ADC Controller
