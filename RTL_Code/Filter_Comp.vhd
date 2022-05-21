@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: IISc
+-- Engineer: Supantha Sen
 -- 
 -- Create Date: 05/03/2019 10:07:15 PM
--- Design Name: 
+-- Design Name: Low Pass Filter
 -- Module Name: Filter_FIR_1 - Behavioral
--- Project Name: 
+-- Project Name: FPGA Mini-Project
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 
