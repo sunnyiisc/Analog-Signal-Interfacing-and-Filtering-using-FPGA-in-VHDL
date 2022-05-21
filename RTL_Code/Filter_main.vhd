@@ -3,7 +3,7 @@
 -- Engineer: Supantha Sen
 -- 
 -- Create Date: 01.05.2019 12:12:13
--- Design Name: ADC-DAC Interfacing by Filtering
+-- Design Name: ADC-DAC Interfacing with Filtering
 -- Module Name: Filter_main - Behavioral
 -- Project Name: FPGA Mini-Project
 -- Target Devices: 
