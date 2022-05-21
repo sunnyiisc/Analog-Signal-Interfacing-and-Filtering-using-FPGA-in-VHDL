@@ -4,7 +4,7 @@ Reading the digitized values of an analog signal connected to ADC input on Spart
 --------------------------------------
 ## Reference Documents:
 
-- [Design_Details](Design_Details.vhd)
+- [Design_Details](Design_Details.md)
 
 --------------------------------------
 ## Source Code and Desiged Blocks
